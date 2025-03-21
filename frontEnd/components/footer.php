@@ -72,11 +72,11 @@
       <div class="footer__content">
         <h3 class="footer__title">Inscription à la newsletter</h3>
 
-        <p>
+        <!-- <p>
         Soyez les premiers informés de nos offres promotionnelles exclusives !
          Vous pouvez vous désinscrire à tout moment. 
          Consultez nos conditions d'utilisation pour accéder à nos informations de contact.
-        </p> <br>
+        </p> <br> -->
         <form action="" class="newsletter__form">
               <input type="text" placeholder="Enter your email" class="newsletter__input"/>
               <button type="submit" class="newsletter__btn-f">Subscribe</button>
@@ -86,8 +86,8 @@
     </div>
 
     <div class="footer__bottom">
-      <p class="copyright">&copy; 2025 AFRI-SECURITE. All rights reserved</p>
-      <span class="designer">Designed by Us</span>
+      <p class="copyright">&copy; 2025 <strong>AFRI-SECURITE</strong>. All rights reserved</p>
+      <span class="designer">Designed and created by &copy; <strong>NAOUAOUI-OUSSAMA</strong></span>
     </div>
   </footer>
   

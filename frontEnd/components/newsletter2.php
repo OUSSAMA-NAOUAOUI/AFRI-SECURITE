@@ -10,8 +10,8 @@
           Découvrez nos articles et conseils pour mieux vous protéger
           </p>
 
-          <form action="" class="newsletter__form">
+          <div action="" class="newsletter__form">
             <a href="#" class="newsletter__btn">contactez nous</a>
-          </form>
+          </div>
         </div>
 </section>

@@ -361,11 +361,11 @@
               <div class="product__item">
                 <div class="product__banner">
                   <a href="details.php" class="product__images">
-                    <img src="assets/img/parka.jpg"
+                    <img src="assets/images/parka-removebg-preview.png"
                      alt="" 
                     class="product__img default">
 
-                    <img src="assets/img/parka.jpg"
+                    <img src="assets/images/parka-removebg-preview.png"
                      alt="" 
                     class="product__img hover">
                   </a>
