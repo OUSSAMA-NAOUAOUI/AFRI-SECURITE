@@ -4,6 +4,8 @@
 <?php include 'components/head.php'; ?>
 
   <body>
+    <!-- progressbar -->
+     <div class="progressbar"></div>
     <!--=============== HEADER ===============-->
     <?php include 'components/header.php'; ?>
     <!--=============== MAIN ===============-->
