@@ -7,7 +7,8 @@
     <!--=============== HEADER ===============-->
     <?php include 'components/header.php' ?>
 
-
+<!-- progressbar -->
+<div class="progressbar"></div>
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== BREADCRUMB ===============-->
@@ -25,12 +26,12 @@
       <section class="details section--lg">
         <div class="details__container container grid">
           <div class="details__group">
-            <img src="assets/img/xf2.jpg" alt="" class="details__img"/>
+            <img src="assets/images/h-380.jpg" alt="" class="details__img"/>
 
             <div class="details__small-images grid">
-              <img src="assets/img/product-8-2.jpg" alt="" class="details__small-img">
-              <img src="assets/img/xf2.jpg" alt="" class="details__small-img">
-              <img src="assets/img/product-8-2.jpg" alt="" class="details__small-img">
+              <img src="assets/images/h-380.jpg" alt="" class="details__small-img">
+              <img src="assets/images/fire-monitor.png" alt="" class="details__small-img">
+              <img src="assets/images/rosenbauer_monitor_RB6-.jpg" alt="" class="details__small-img">
             </div>
           </div>
 
@@ -40,13 +41,15 @@
 
             <div class="details__price flex">
               <span class="new__price">$116</span>
-              <span class="old__price">$200</span>
-              <span class="save__price">$25% off</span>
+              <!-- <span class="old__price">$200</span>
+              <span class="save__price">$25% off</span> -->
             </div>
 
             <p class="short__description">
-            🚒 Véhicule Incendie Mousse – La solution idéale pour combattre les grands incendies !
-             <br> 💨 Équipé de systèmes avancés pour l'extinction des flammes avec une mousse haute efficacité, idéal pour les zones industrielles et les aéroports.
+             Fire Monitor – La solution idéale pour une protection incendie efficace ! <br>
+             Conçu pour projeter de l'eau ou de la mousse à haute pression, il assure une extinction rapide et ciblée,
+             <br> idéal pour les sites industriels, les raffineries et les entrepôts.
+
             </p>
             <ul class="product__list">
 
@@ -71,13 +74,13 @@
 
             <ul class="details__meta">
               <li class="meta__list flex">
-                <span>SKU:</span> FWM15VKT
+              <span>SKU:</span> FIRE-MONITOR-001  
               </li>
               <li class="meta__list flex">
-                <span>Tags:</span> Cloth, Women, Dress
+                <span>Tags:</span> Fire Safety, Water Cannon, Firefighting  
               </li>
               <li class="meta__list flex">
-                <span>Availabilty:</span> 8 Items In Stock
+                <span>Availabilty:</span> Disponible
               </li>
             </ul>
           </div>
@@ -95,78 +98,47 @@
 
         <div class="details__tabs-content">
           <div class="details__tab-content active-tab" content id="info">
-            <table class="info__table">
-              <tr>
-                <th>Stand Up</th>
-                <td>35"L x 24"W x 37-45"H(front to back wheel)</td>
-              </tr>
+          <table class="info__table">
+            <tr>
+              <th>Type</th>
+              <td>Manuel / Automatique</td>
+            </tr>
 
-              <tr>
-                <th>Folded (w/o wheels)</th>
-                <td>32.5"L x 18.5"W x 16.5"H</td>
-              </tr>
+            <tr>
+              <th>Débit</th>
+              <td>1000 - 4000 L/min</td>
+            </tr>
 
-              <tr>
-                <th>Folded (w/ wheels)</th>
-                <td>32.5"L x 18.5"W x 16.5"H</td>
-              </tr>
+            <tr>
+              <th>Portée</th>
+              <td>50 - 70 mètres</td>
+            </tr>
 
-              <tr>
-                <th>Door Pass Through</th>
-                <td>24</td>
-              </tr>
+            <tr>
+              <th>Matériau</th>
+              <td>Aluminium / Acier inoxydable</td>
+            </tr>
 
-              <tr>
-                <th>Frame</th>
-                <td>Aluminum</td>
-              </tr>
+            <tr>
+              <th>Poids</th>
+              <td>15 - 30 kg</td>
+            </tr>
 
-              <tr>
-                <th>Weight (w/o wheels)</th>
-                <td>20 LBS</td>
-              </tr>
+            <tr>
+              <th>Pression de Service</th>
+              <td>7 - 10 bars</td>
+            </tr>
 
-              <tr>
-                <th>Weight Capacity</th>
-                <td>60 LBS</td>
-              </tr>
+            <tr>
+              <th>Couleur</th>
+              <td>Rouge</td>
+            </tr>
 
-              <tr>
-                <th>Width</th>
-                <td>24"</td>
-              </tr>
-
-              <tr>
-                <th>Handle height (ground to handle)</th>
-                <td>37-45"</td>
-              </tr>
-
-              <tr>
-                <th>Wheels</th>
-                <td>12" air / wide track slick tread</td>
-              </tr>
-
-              <tr>
-                <th>Seat back height</th>
-                <td>21.5"</td>
-              </tr>
-
-              <tr>
-                <th>Head room (inside canopy)</th>
-                <td> 25"</td>
-              </tr>
-
-              <tr>
-                <th>Color</th>
-                <td>Black, Blue, Red, White</td>
-              </tr>
-
-              <tr>
-                <th>Size</th>
-                <td>M, S</td>
-              </tr>
-              
-            </table>
+            <tr>
+              <th>Dimensions</th>
+              <td>Variable selon le modèle</td>
+            </tr>
+          </table>
           </div>
 
           <div class="details__tab-content" content id="reviews">

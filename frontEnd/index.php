@@ -3,6 +3,7 @@
 
 <?php include 'components/head.php'; ?>
 
+
   <body>
     <!-- progressbar -->
      <div class="progressbar"></div>
@@ -11,19 +12,19 @@
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== HOME ===============-->
-      <section class="home section--lg container" >
+      <section class="home section--lg containe" style=" background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('assets/images/slider-main/image3.jpg') no-repeat center center/cover; ">
         <div class="home__container container grid">
-          <div class="home__container">
-            <span class="home__subtitle">Expert en gestion des risques industriels</span>
-            <h1 class="home__title">
-              BIENVENUE SUR LE SITE DE <span>L'EXPERT</span>
-            </h1>
+          <div class="home__container" >
+            <!-- <span class="home__subtitle">Expert en gestion des risques industriels</span> -->
+            <h2 class="home__title">
+              BIENVENUE SUR LE SITE DE <span>L'EXPERT</span> EN GESTION DES <span> RISQUES INDUSTRIELS </span>
+            </h2>
             <p class="home__description">
               Des solutions professionnelles pour la gestion des risques industriels
             </p>
-            <a href="shop.php" class="btn">Découvrez nos Produits</a>
+            <!-- <a href="shop.php" class="btn">Découvrez nos Produits</a> -->
           </div>
-          <img src="assets/img/img-slide-home.jpg" alt="" class="home__img" />
+          <!-- <img src="assets/images/slider-main/image1.jpg" alt="" class="home__img" /> -->
         </div>
         
       </section>
@@ -1391,11 +1392,11 @@
             <div class="product__item swiper-slide">
               <div class="product__banner">
                 <a href="details.php" class="product__images">
-                  <img src="assets/img/shos.jpg"
+                  <img src="assets/images/service/detecteur.jpg"
                    alt="" 
                   class="product__img default">
 
-                  <img src="assets/img/shos.jpg"
+                  <img src="assets/images/service/detecteur.jpg"
                    alt="" 
                   class="product__img hover">
                 </a>

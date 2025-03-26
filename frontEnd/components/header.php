@@ -2,9 +2,9 @@
     <div class="header__top">
       <div class="header__container container">
         <div class="header__contact">
-          <span><a class="phone-number" style="color: var(--text-color-light);" href="tel:+212661096881">(+212) 06.61.09.68.81</a><br>
-                <a class="phone-number" style="color: var(--text-color-light);" href="tel:+212661525399">(+212) 06.61.52.53.99 </a><br>
-                <a class="phone-number" style="color: var(--text-color-light);" href="tel:+212521000259">(+212) 05.21.00.02.59 </a><br>
+          <span><a class="phone-number" style="color:white;" href="tel:+212661096881">(+212) 06.61.09.68.81</a><br>
+                <a class="phone-number" style="color:white;" href="tel:+212661525399">(+212) 06.61.52.53.99 </a><br>
+                <a class="phone-number" style="color:white;" href="tel:+212521000259">(+212) 05.21.00.02.59 </a><br>
                 </span>
 
               </div>
@@ -15,6 +15,7 @@
         <a href="login-register.php" class="header__top-action">
           Log In / Sign Up
         </a>
+        
       </div>
     </div>
 
@@ -45,8 +46,8 @@
             <img src="assets/img/down-arrow.png" alt="">
            </button>
             <ul class="dropdown-menu">
-              <li><a href="#">Historique</a></li>
-              <li><a href="#">Presentation de la Société </a></li>
+              <li><a href="societe/historique.php">Historique</a></li>
+              <li><a href="societe/presentation.php">Presentation de la Société </a></li>
               <li><a href="#">Temoignages</a></li>
             </ul>
           </li>
@@ -75,12 +76,12 @@
             <ul class="dropdown-menu">
               <li><a href="#">Formation en securite insendie</a></li>
               <li><a href="#">Consultation en securite insendie</a></li>
-              <li><a href="#">Produits de securite insendie</a></li>
+              <li><a href="shop.php">Produits de securite insendie</a></li>
             </ul>
           </li>
 
           <li class="nav__item">
-            <a href="#" class="nav__link">Blog</a>
+            <a href="blog.php" class="nav__link">Blog</a>
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link">Contact</a>
@@ -94,13 +95,14 @@
            <button class="search__btn">
             <img src="assets/img/search.png" alt="">
            </button>
+           
         </div>
       </div>
 
       <div class="header__user-actions">
         <a href="cart.php" class="header__action-btn">
           <img src="assets/img/icon-cart.svg" alt="">
-          <span class="count">5</span>
+          <span class="count">3</span>
         </a>
 
         <div class="header__action-btn nav__toggle" id="nav-toggle">

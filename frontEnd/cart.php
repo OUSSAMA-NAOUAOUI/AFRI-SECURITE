@@ -4,6 +4,8 @@
   <?php include 'components/head.php'; ?>
 
   <body>
+    <!-- progressbar -->
+    <div class="progressbar"></div>
     <!--=============== HEADER ===============-->
     <?php include 'components/header.php'; ?>
 
@@ -50,7 +52,7 @@
 
               <td><span class="table__price">$110</span></td>
 
-              <td><input type="number" value="3" class="quantity"></td>
+              <td><input type="number" value="1" class="quantity"></td>
 
               <td><span class="table__subtotal">$220</span></td>
 
@@ -96,7 +98,7 @@
 
               <td><span class="table__price">$110</span></td>
 
-              <td><input type="number" value="3" class="quantity"></td>
+              <td><input type="number" value="1" class="quantity"></td>
 
               <td><span class="table__subtotal">$220</span></td>
 
@@ -126,13 +128,13 @@
 
             <table class="cart__total-table">
               <tr>
-                <td><span class="cart__total-title">Cart Subtotal</span></td>
-                <td><span class="cart__total-price">$240</span></td>
+                <!-- <td><span class="cart__total-title">Cart Subtotal</span></td> -->
+                <!-- <td><span class="cart__total-price">$240</span></td> -->
               </tr>
 
               <tr>
-                <td><span class="cart__total-title">Shipping</span></td>
-                <td><span class="cart__total-price">$10</span></td>
+                <!-- <td><span class="cart__total-title">Shipping</span></td> -->
+                <!-- <td><span class="cart__total-price">$10</span></td> -->
               </tr>
 
               <tr>

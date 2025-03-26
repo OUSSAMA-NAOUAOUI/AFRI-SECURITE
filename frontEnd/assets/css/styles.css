@@ -12,7 +12,7 @@
   --second-color:hsl(34, 94%, 87%) ;
   --title-color: hsl(0, 0%, 13%);
   --text-color: hsl(60, 1%, 56%);
-  --text-color-light:hsl(60, 1%, 56%) ;
+  --text-color-light:hsl(0, 3%, 35%) ;
   --body-color:hsl(0, 0%, 100%) ;
   --container-color: hsl(0, 0%, 93%) ;
   --border-color: rgba(255, 255, 255, 0.933);
@@ -138,6 +138,7 @@ div.progressbar{
     background-color: #070707;
   }
 }
+/* slider  */
 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -204,8 +205,8 @@ div.progressbar{
 
 /*=============== HEADER & NAV ===============*/
 .header__top {
-  background-color:hsl(7.64deg 100% 88.67%);
-  border-bottom: 1px solid var(--first-color);
+  background-color:black;
+  border-bottom: 1px solid white;
   padding-block: 0.875rem;
 }
 
@@ -215,7 +216,7 @@ div.progressbar{
   justify-content: space-between;
 }
 .header__contact span a{
-  color: var(--text-color-light);
+  color: white;
 }
 
 .header__contact span:first-child {
@@ -229,12 +230,13 @@ div.progressbar{
 }
 
 .header__alert-news{
-  color: var(--text-color-light);
+  color: white;
   font-weight: var(--weight-600);
 }
 
 .header__top-action {
-  color:var(--text-color);
+  /* color:var(--text-color); */
+  color: white;
 }
 
 .nav,
@@ -247,8 +249,12 @@ div.progressbar{
 
 .nav {
   height: calc(var(--header-height) + 2.5rem);
-  justify-content: space-between;
-  column-gap: 1rem;
+    justify-content: space-between;
+    column-gap: 1rem;
+    
+    
+    width: 100%;
+
 }
 
 .nav__logo-img{
@@ -385,7 +391,7 @@ div.progressbar{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   min-width: 260px;
-  padding: 0.5rem 0;
+  padding: 1.5rem 0;
   opacity: 0;
   transform: translateY(-10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -443,9 +449,12 @@ div.progressbar{
 /*=============== HOME ===============*/
 
 .home__container {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/images/slider-main/image1.jpg) center / cover no-repeat; */
   grid-template-columns: 5fr 7fr;
   align-items: center;
-}  
+  padding: 1rem;
+}
+
 
 .home__subtitle,
 .home__description{
@@ -465,17 +474,20 @@ div.progressbar{
   font-size: var(--h1-font-size);
   font-weight: var(--weight-700);
   line-height: 1.4;
+  color: white;
+  width: 58rem;
 }  
 
 .home__title span{
   color: var(--first-color);
-  font-size: var(--big-font-size);
+  /* font-size: var(--big-font-size); */
 }  
 .home__description {
   margin-block: .5rem 2rem;
 }  
 .home__img {
   justify-self: flex-end;
+  border-radius: 30px;
 }  
 
 
@@ -1165,6 +1177,7 @@ div.progressbar{
 
 .details__img {
   margin-bottom: 0.5rem;
+  width: 90%;
 }
 
 .details__small-images {

@@ -13,5 +13,5 @@
 
     <title>AFRI-SECURITE</title>
     <link rel="website icon" type="png" href="assets/images/favicon/favicon.ico">
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </head>
