@@ -1919,6 +1919,10 @@ div.progressbar{
   .accounts__container,
   .cart__group {
     grid-template-columns: 1fr ;
+
+  }
+  .home__title{
+    width: 21rem;
   }
 
   .cart__group {
@@ -2014,6 +2018,10 @@ div.progressbar{
     grid-template-columns: 100%;
   }
 
+  .home__title{
+    width: 30rem;
+  }
+
   .tab__header,
   .tab__body{
     padding: 0.75rem;
@@ -2032,6 +2040,11 @@ div.progressbar{
 
 /* For small devices */
 @media screen and (max-width: 576px) {
+
+  .home__title{
+    width: 19rem;
+  }
+
   .category__item {
     padding-bottom: 1rem;
   }
@@ -2114,7 +2127,9 @@ div.progressbar{
     height: 36px;
     line-height: 38px;
   }
-
+  .home__title{
+    width: 19rem;
+  }
   .cart__btn {
     bottom: 1.4rem;
     right: 1.25rem;
@@ -2163,3 +2178,6 @@ div.progressbar{
     display: block;
   }
 }
+
+
+/* loader css  */

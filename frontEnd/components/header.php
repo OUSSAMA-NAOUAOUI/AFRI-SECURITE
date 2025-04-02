@@ -48,7 +48,7 @@
             <ul class="dropdown-menu">
               <li><a href="societe/historique.php">Historique</a></li>
               <li><a href="societe/presentation.php">Presentation de la Société </a></li>
-              <li><a href="#">Temoignages</a></li>
+              <li><a href="societe/Temoignages.php">Temoignages</a></li>
             </ul>
           </li>
 
@@ -74,7 +74,7 @@
             <img src="assets/img/down-arrow.png" alt="">
            </button>
             <ul class="dropdown-menu">
-              <li><a href="#">Formation en securite insendie</a></li>
+              <li><a href="services/Formation.php">Formation en securite insendie</a></li>
               <li><a href="#">Consultation en securite insendie</a></li>
               <li><a href="shop.php">Produits de securite insendie</a></li>
             </ul>

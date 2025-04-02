@@ -4,6 +4,46 @@
 <?php include 'components/head.php'; ?>
 
 
+<style>
+        .slider {
+            width: 100%;
+            /* height: 100vh; */
+            background: 
+                linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+                url('assets/images/slider-main/image1.jpg') no-repeat center center / cover;
+            animation: changeBackground 16s infinite;
+        }
+
+        @keyframes changeBackground {
+            0%, 20% {
+                background: 
+                    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+                    url('assets/images/slider-main/image1.jpg') no-repeat center center / cover;
+            }
+            25%, 45% {
+                background: 
+                    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+                    url('assets/images/slider-main/image2.jpg') no-repeat center center / cover;
+            }
+            50%, 70% {
+                background: 
+                    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+                    url('assets/images/slider-main/image3.jpg') no-repeat center center / cover;
+            }
+            75%, 95% {
+                background: 
+                    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+                    url('assets/images/slider-main/image4.jpg') no-repeat center center / cover;
+            }
+            100% {
+                background: 
+                    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+                    url('assets/images/slider-main/image1.jpg') no-repeat center center / cover;
+            }
+        }
+    </style>
+
+
   <body>
     <!-- progressbar -->
      <div class="progressbar"></div>
@@ -12,7 +52,7 @@
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== HOME ===============-->
-      <section class="home section--lg containe" style=" background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('assets/images/slider-main/image3.jpg') no-repeat center center/cover; ">
+      <section class="home section--lg containe slider">
         <div class="home__container container grid">
           <div class="home__container" >
             <!-- <span class="home__subtitle">Expert en gestion des risques industriels</span> -->

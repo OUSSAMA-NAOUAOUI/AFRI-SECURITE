@@ -73,10 +73,10 @@ var swiperCategories = new Swiper(".categories__container", {
 /*=============== SWIPER PRODUCTS ===============*/
 
 var swiperProduct = new Swiper(".new__container", {
-  spaceBetween: 24,
-  loop:true,
+    spaceBetween: 24,
+    loop:true,
 
-  navigation: {
+    navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
