@@ -15,7 +15,7 @@
         <a href="login-register.php" class="header__top-action">
           Log In / Sign Up
         </a>
-        
+
       </div>
     </div>
 
@@ -84,7 +84,7 @@
             <a href="blog.php" class="nav__link">Blog</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Contact</a>
+            <a href="contact.php" class="nav__link">Contact</a>
           </li>
         </ul>
 
@@ -95,8 +95,8 @@
            <button class="search__btn">
             <img src="assets/img/search.png" alt="">
            </button>
-           
-        </div>
+
+          </div>
       </div>
 
       <div class="header__user-actions">

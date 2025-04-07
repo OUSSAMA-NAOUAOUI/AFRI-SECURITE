@@ -224,7 +224,7 @@
             
             <article class="blog-card">
                 <div class="card-image">
-                    <img src="assets/images/catalogues/cat10.png" alt="Détecteurs de fumée">
+                    <img src="assets/images/catalogues/cat7.png" alt="Détecteurs de fumée">
                 </div>
                 <div class="blog-content">
                     <h3>Les détecteurs de fumée : installation et entretien</h3>

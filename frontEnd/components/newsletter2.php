@@ -1,4 +1,5 @@
-<!--=============== NEWSLETTER ===============-->
+<!--=============== NEWSLETTER-2 ===============-->
+
 <section class="newsletter section home__newsletter">
         <div class="newsletter__container container grid">
           <h3 class="newsletter__title flex">

@@ -1,0 +1,36 @@
+[
+    {
+      "id": 1,
+      "name": "Véhicule Incendie Mousse",
+      "category": "incendie",
+      "brand": "AFRI-SECURITE",
+      "price": 116,
+      "old_price": 0,
+      "main_image": "h-380.jpg",
+      "images": ["h-380.jpg", "fire-monitor.png", "rosenbauer_monitor_RB6-.jpg"],
+      "description": "Fire Monitor – La solution idéale pour une protection incendie efficace...",
+      "sku": "FIRE-MONITOR-001",
+      "tags": "Sécurité incendie, Monitor",
+      "specs": {
+        "Type": "Manuel / Automatique",
+        "Débit": "1000 - 4000 L/min",
+        "Portée": "50 - 70 mètres",
+        "Poids": "15 - 30 kg"
+      },
+      "reviews_count": 3
+    },
+    {
+      "id": 2,
+      "name": "Autre Produit",
+      "category": "incendie",
+      "brand": "Autre Marque",
+      "price": 200,
+      "main_image": "produit2.jpg",
+      "images": ["produit2.jpg"],
+      "description": "Description du produit...",
+      "specs": {
+        "Type": "Type 2",
+        "Débit": "500 - 2000 L/min"
+      }
+    }
+  ]

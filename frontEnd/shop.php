@@ -23,7 +23,7 @@
 
       <!--=============== PRODUCTS ===============-->
       <section class="products section--lg container">
-        <p class="total__products">We found <span>688</span> items for you!</p>
+        <p class="total__products">We found <span>999</span> items for you!</p>
 
         <div class="products__container grid">
           <div class="product__item">
