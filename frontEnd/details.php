@@ -1,3 +1,31 @@
+<?php
+// Lire le fichier JSON
+$json_data = file_get_contents('data/products.json');
+$data = json_decode($json_data, true);
+$products = $data['products'];
+
+if (isset($_GET['id'])) {
+    $product_id = $_GET['id'];
+    $product = null;
+    
+    // Trouver le produit par ID
+    foreach ($products as $p) {
+        if ($p['id'] == $product_id) {
+            $product = $p;
+            break;
+        }
+    }
+    
+    if (!$product) {
+        header("Location: shop.php");
+        exit();
+    }
+} else {
+    header("Location: shop.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,74 +46,27 @@
           <li><span class="breadcrumb__link">></span></li>
           <li><span class="breadcrumb__link"></span>incendie</li>
           <li><span class="breadcrumb__link">></span></li>
-          <li><span class="breadcrumb__link"></span>Véhicule Incendie Mousse</li>
+          <li><span class="breadcrumb__link"></span><?= $product['name'] ?></li>
         </ul>
       </section>
 
       <!--=============== DETAILS ===============-->
-      <section class="details section--lg">
-        <div class="details__container container grid">
-          <div class="details__group">
-            <img src="assets/images/h-380.jpg" alt="" class="details__img"/>
-
-            <div class="details__small-images grid">
-              <img src="assets/images/h-380.jpg" alt="" class="details__small-img">
-              <img src="assets/images/fire-monitor.png" alt="" class="details__small-img">
-              <img src="assets/images/rosenbauer_monitor_RB6-.jpg" alt="" class="details__small-img">
-            </div>
+      <section class="product-details section--lg container">
+        <div class="product-details__container grid">
+          <div class="product-details__images">
+            <img src="<?php echo $product['image_path']; ?>" alt="<?php echo $product['name']; ?>">
           </div>
-
-          <div class="details__group">
-            <h3 class="details__title">Véhicule Incendie Mousse</h3>
-            <p class="details__brand">Brands: <span>AFRI-SECURITE</span></p>
-
-            <div class="details__price flex">
-              <span class="new__price">$116</span>
-              <!-- <span class="old__price">$200</span>
-              <span class="save__price">$25% off</span> -->
+          
+          <div class="product-details__content">
+            <h1 class="product-details__title"><?php echo $product['name']; ?></h1>
+            <span class="product-details__category"><?php echo $product['category']; ?></span>
+            
+            <div class="product-details__description">
+              <?php echo $product['description']; ?>
             </div>
-
-            <p class="short__description">
-             Fire Monitor – La solution idéale pour une protection incendie efficace ! <br>
-             Conçu pour projeter de l'eau ou de la mousse à haute pression, il assure une extinction rapide et ciblée,
-             <br> idéal pour les sites industriels, les raffineries et les entrepôts.
-
-            </p>
-            <ul class="product__list">
-
-              <li class="list__item flex">
-                <i class="fi-rs-refresh"></i> 3 Day Return Policy
-              </li>
-
-              <li class="list__item flex">
-                <i class="fi-rs-credit-card"></i> Cash On Delivery Available
-              </li>
-            </ul>
-
-            <div class="details__action">
-              <input type="number" class="quantity" value="3"/>
-
-              <a href="#" class="btn btn--sm">Add to Cart</a>
-
-              <a href="#" class="details__action-btn">
-                <i class="fi fi-rs-heart"></i>
-              </a>
-            </div>
-
-            <ul class="details__meta">
-              <li class="meta__list flex">
-              <span>SKU:</span> FIRE-MONITOR-001  
-              </li>
-              <li class="meta__list flex">
-                <span>Tags:</span> Fire Safety, Water Cannon, Firefighting  
-              </li>
-              <li class="meta__list flex">
-                <span>Availabilty:</span> Disponible
-              </li>
-            </ul>
           </div>
         </div>
-      </section>  
+      </section>
 
       <!--=============== PRODUCTS ===============-->
       <section class="products container section--lg">
@@ -98,11 +79,11 @@
             <div class="product__banner">
               <a href="details.php" class="product__images">
                 <img src="assets/img/product-12-1.jpg"
-                 alt="" 
+                 alt="<?= $product['name'] ?>" 
                 class="product__img default">
 
                 <img src="assets/img/product-12-2.jpg"
-                 alt="" 
+                 alt="<?= $product['name'] ?>" 
                 class="product__img hover">
               </a>
 
@@ -111,7 +92,7 @@
             <div class="product__content">
               <span class="product__category">sécurité incendie</span>
               <a href="details.php">
-                <h3 class="product__title">Véhicule Incendie Mousse</h3>
+                <h3 class="product__title"><?= $product['name'] ?></h3>
               </a>
               <div class="product__rating">
                 <i class="fi fi-rs-star"></i>
@@ -138,11 +119,11 @@
             <div class="product__banner">
               <a href="details.php" class="product__images">
                 <img src="assets/img/product-3-1.jpg"
-                 alt="" 
+                 alt="<?= $product['name'] ?>" 
                 class="product__img default">
 
                 <img src="assets/img/product-3-2.jpg"
-                 alt="" 
+                 alt="<?= $product['name'] ?>" 
                 class="product__img hover">
               </a>
 
@@ -154,7 +135,7 @@
             <div class="product__content">
               <span class="product__category">sécurité incendie</span>
               <a href="details.php">
-                <h3 class="product__title">Véhicule Incendie Mousse</h3>
+                <h3 class="product__title"><?= $product['name'] ?></h3>
               </a>
               <div class="product__rating">
                 <i class="fi fi-rs-star"></i>
@@ -181,11 +162,11 @@
             <div class="product__banner">
               <a href="details.php" class="product__images">
                 <img src="assets/img/product-10-1.jpg"
-                 alt="" 
+                 alt="<?= $product['name'] ?>" 
                 class="product__img default">
 
                 <img src="assets/img/product-10-2.jpg"
-                 alt="" 
+                 alt="<?= $product['name'] ?>" 
                 class="product__img hover">
               </a>
 
@@ -197,7 +178,7 @@
             <div class="product__content">
               <span class="product__category">sécurité incendie</span>
               <a href="details.php">
-                <h3 class="product__title">Véhicule Incendie Mousse</h3>
+                <h3 class="product__title"><?= $product['name'] ?></h3>
               </a>
               <div class="product__rating">
                 <i class="fi fi-rs-star"></i>
@@ -224,11 +205,11 @@
             <div class="product__banner">
               <a href="details.php" class="product__images">
                 <img src="assets/img/product-6-1.jpg"
-                 alt="" 
+                 alt="<?= $product['name'] ?>" 
                 class="product__img default">
 
                 <img src="assets/img/product-6-2.jpg"
-                 alt="" 
+                 alt="<?= $product['name'] ?>" 
                 class="product__img hover">
               </a>
 
@@ -240,7 +221,7 @@
             <div class="product__content">
               <span class="product__category">sécurité incendie</span>
               <a href="details.php">
-                <h3 class="product__title">Véhicule Incendie Mousse</h3>
+                <h3 class="product__title"><?= $product['name'] ?></h3>
               </a>
               <div class="product__rating">
                 <i class="fi fi-rs-star"></i>

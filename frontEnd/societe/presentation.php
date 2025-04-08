@@ -276,7 +276,7 @@
             }
             
             .section {
-                padding: 60px 0;
+                padding: 20px 0;
             }
             
             .interventions-section {

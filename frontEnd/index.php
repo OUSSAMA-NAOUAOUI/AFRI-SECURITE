@@ -293,8 +293,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -333,8 +333,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -376,8 +376,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -417,8 +417,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -457,8 +457,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -500,8 +500,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -543,8 +543,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -586,8 +586,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -633,8 +633,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -676,8 +676,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -719,8 +719,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -762,8 +762,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -805,8 +805,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -848,8 +848,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -891,8 +891,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -934,8 +934,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -981,8 +981,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -1024,8 +1024,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -1067,8 +1067,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -1110,8 +1110,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -1153,8 +1153,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -1196,8 +1196,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -1239,8 +1239,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -1282,8 +1282,8 @@
                     <i class="fi fi-rs-star"></i>
                   </div>
                   <div class="product__price flex">
-                    <span class="new__price">$238.85</span>
-                    <span class="old__price">$245.8</span>
+                    <!-- <span class="new__price">$238.85</span> -->
+                    <!-- <span class="old__price">$245.8</span> -->
                   </div>
 
                   <a href="#" 
@@ -1302,108 +1302,7 @@
       </section>
 
       <!--=============== DEALS ===============-->
-      <!-- <section class="deals section">
-        <div class="deals__container container grid">
-          <div class="deals__item">
-            <div class="deals__group">
-              <h3 class="deals__brand">Ramadan Kareem</h3>
-              <span class="category">Linited quantities.</span>
-            </div>
-
-
-            <h4 class="deals__title">Summer Collection New Morden Design</h4>
-
       
-            <div class="deals__price flex">
-              <span class="new__price">$139.00</span>
-                <span class="old__price">$160.99</span>
-            </div>
-
-            <div class="deals__group">
-              <p class="deals__countdown-text">Hurry Up! offer End In: </p>
-
-              <div class="countdown">
-                <div class="countdown__amount">
-                  <p class="countdown__period">02</p>
-                  <span class="unit">Days</span>
-                </div>
-                <div class="countdown">
-                  <div class="countdown__amount">
-                    <p class="countdown__period">22</p>
-                    <span class="unit">Hours</span>
-                  </div>
-                  <div class="countdown">
-                    <div class="countdown__amount">
-                      <p class="countdown__period">57</p>
-                      <span class="unit">Mins</span>
-                    </div>
-                    <div class="countdown">
-                      <div class="countdown__amount">
-                        <p class="countdown__period">24</p>
-                        <span class="unit">Sec</span>
-                      </div>
-              </div>
-            </div>
-                </div>
-              </div>
-              
-              
-          </div>
-          
-          <div class="deals__btn">
-            <a href="details.php" class="btn btn--md">Shop New</a>
-          </div>
-          </div>
-
-          <div class="deals__item">
-            <div class="deals__group">
-              <h3 class="deals__brand">Women sécurité incendie</h3>
-              <span class="category">Suirt & Bag</span>
-            </div>
-            <h4 class="deals__title"> Try something new on vacation</h4>
-
-      
-            <div class="deals__price flex">
-              <span class="new__price">$178.00</span>
-                <span class="old__price">$256.99</span>
-            </div>
-
-            <div class="deals__group">
-              <p class="deals__countdown-text">Hurry Up! offer End In: </p>
-
-              <div class="countdown">
-                <div class="countdown__amount">
-                  <p class="countdown__period">02</p>
-                  <span class="unit">Days</span>
-                </div>
-                <div class="countdown">
-                  <div class="countdown__amount">
-                    <p class="countdown__period">22</p>
-                    <span class="unit">Hours</span>
-                  </div>
-                  <div class="countdown">
-                    <div class="countdown__amount">
-                      <p class="countdown__period">57</p>
-                      <span class="unit">Mins</span>
-                    </div>
-                    <div class="countdown">
-                      <div class="countdown__amount">
-                        <p class="countdown__period">24</p>
-                        <span class="unit">Sec</span>
-                      </div>
-              </div>
-            </div>
-                </div>
-              </div>
-              
-              
-          </div>
-          <div class="deals__btn">
-            <a href="details.php" class="btn btn--md">Shop New</a>
-          </div>
-          </div>
-        </div>
-      </section> -->
 
       <?php include 'components/newsletter.php'; ?>
       
@@ -1442,8 +1341,8 @@
                   <i class="fi fi-rs-star"></i>
                 </div>
                 <div class="product__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
 
                 <a href="#" 
@@ -1485,8 +1384,8 @@
                   <i class="fi fi-rs-star"></i>
                 </div>
                 <div class="product__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
 
                 <a href="#" 
@@ -1528,8 +1427,8 @@
                   <i class="fi fi-rs-star"></i>
                 </div>
                 <div class="product__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
 
                 <a href="#" 
@@ -1571,8 +1470,8 @@
                   <i class="fi fi-rs-star"></i>
                 </div>
                 <div class="product__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
 
                 <a href="#" 
@@ -1614,8 +1513,8 @@
                   <i class="fi fi-rs-star"></i>
                 </div>
                 <div class="product__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
 
                 <a href="#" 
@@ -1657,8 +1556,8 @@
                   <i class="fi fi-rs-star"></i>
                 </div>
                 <div class="product__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
 
                 <a href="#" 
@@ -1700,8 +1599,8 @@
                   <i class="fi fi-rs-star"></i>
                 </div>
                 <div class="product__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
 
                 <a href="#" 
@@ -1743,8 +1642,8 @@
                   <i class="fi fi-rs-star"></i>
                 </div>
                 <div class="product__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
 
                 <a href="#" 
@@ -1786,8 +1685,8 @@
                 </a>
 
                 <div class="showcase__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
               </div>
             </div>
@@ -1806,8 +1705,8 @@
                 </a>
 
                 <div class="showcase__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
               </div>
             </div>
@@ -1826,8 +1725,8 @@
                 </a>
 
                 <div class="showcase__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
               </div>
             </div>
@@ -1850,8 +1749,8 @@
                 </a>
 
                 <div class="showcase__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
               </div>
             </div>
@@ -1870,8 +1769,8 @@
                 </a>
 
                 <div class="showcase__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
               </div>
             </div>
@@ -1890,8 +1789,8 @@
                 </a>
 
                 <div class="showcase__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
               </div>
             </div>
@@ -1914,8 +1813,8 @@
                 </a>
 
                 <div class="showcase__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
               </div>
             </div>
@@ -1934,8 +1833,8 @@
                 </a>
 
                 <div class="showcase__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
               </div>
             </div>
@@ -1954,8 +1853,8 @@
                 </a>
 
                 <div class="showcase__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
               </div>
             </div>
@@ -1978,8 +1877,8 @@
                 </a>
 
                 <div class="showcase__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
               </div>
             </div>
@@ -1998,8 +1897,8 @@
                 </a>
 
                 <div class="showcase__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
               </div>
             </div>
@@ -2018,8 +1917,8 @@
                 </a>
 
                 <div class="showcase__price flex">
-                  <span class="new__price">$238.85</span>
-                  <span class="old__price">$245.8</span>
+                  <!-- <span class="new__price">$238.85</span> -->
+                  <!-- <span class="old__price">$245.8</span> -->
                 </div>
               </div>
             </div>

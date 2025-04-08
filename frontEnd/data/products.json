@@ -1,36 +1,80 @@
 [
-    {
-      "id": 1,
-      "name": "Véhicule Incendie Mousse",
-      "category": "incendie",
-      "brand": "AFRI-SECURITE",
-      "price": 116,
-      "old_price": 0,
-      "main_image": "h-380.jpg",
-      "images": ["h-380.jpg", "fire-monitor.png", "rosenbauer_monitor_RB6-.jpg"],
-      "description": "Fire Monitor – La solution idéale pour une protection incendie efficace...",
-      "sku": "FIRE-MONITOR-001",
-      "tags": "Sécurité incendie, Monitor",
-      "specs": {
-        "Type": "Manuel / Automatique",
-        "Débit": "1000 - 4000 L/min",
-        "Portée": "50 - 70 mètres",
-        "Poids": "15 - 30 kg"
-      },
-      "reviews_count": 3
-    },
-    {
-      "id": 2,
-      "name": "Autre Produit",
-      "category": "incendie",
-      "brand": "Autre Marque",
-      "price": 200,
-      "main_image": "produit2.jpg",
-      "images": ["produit2.jpg"],
-      "description": "Description du produit...",
-      "specs": {
-        "Type": "Type 2",
-        "Débit": "500 - 2000 L/min"
-      }
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Véhicule Incendie Mousse",
+    "price": 116,
+    "brand": "AFRI-SECURITE",
+    "description": "Fire Monitor – La solution idéale pour une protection incendie efficace !",
+    "sku": "FIRE-MONITOR-001",
+    "tags": ["Fire Safety", "Water Cannon", "Firefighting"],
+    "availability": "Disponible",
+    "images": ["assets/images/h-380.jpg", "assets/images/fire-monitor.png", "assets/images/rosenbauer_monitor_RB6-.jpg"]
+  },
+  {
+    "id": 2,
+    "title": "Extincteur à Poudre",
+    "price": 59.99,
+    "brand": "AFRI-SECURITE",
+    "description": "Extincteur idéal pour bureaux et maisons.",
+    "sku": "EXT-POW-002",
+    "tags": ["Sécurité", "Extincteur"],
+    "availability": "Disponible",
+    "images": ["assets/images/h-380.jpg", "assets/images/extincteur2.jpg"]
+  },
+  {
+    "id": 3,
+    "title": "Détecteur de Fumée",
+    "price": 29.99,
+    "brand": "AFRI-SECURITE",
+    "description": "Détecteur de fumée intelligent avec alarme sonore.",
+    "sku": "DET-FUM-003",
+    "tags": ["Détection", "Sécurité"],
+    "availability": "Disponible",
+    "images": ["assets/images/h-380.jpg"]
+  },
+  {
+    "id": 4,
+    "title": "RIA (Robinet Incendie Armé)",
+    "price": 199.99,
+    "brand": "AFRI-SECURITE",
+    "description": "Robinet d'incendie armé pour protection des bâtiments.",
+    "sku": "RIA-004",
+    "tags": ["Incendie", "Protection"],
+    "availability": "Disponible",
+    "images": ["assets/images/ria.jpg"]
+  },
+  {
+    "id": 5,
+    "title": "Système d'Alarme Incendie",
+    "price": 499.99,
+    "brand": "AFRI-SECURITE",
+    "description": "Système complet de détection et d'alarme incendie.",
+    "sku": "SAI-005",
+    "tags": ["Système", "Alarme", "Incendie"],
+    "availability": "Disponible",
+    "images": ["assets/images/systeme-alarme.jpg"]
+  },
+  {
+    "id": 6,
+    "title": "Extincteur CO2",
+    "price": 89.99,
+    "brand": "AFRI-SECURITE",
+    "description": "Extincteur à CO2 pour feux électriques.",
+    "sku": "EXT-CO2-006",
+    "tags": ["Extincteur", "CO2", "Électrique"],
+    "availability": "Disponible",
+    "images": ["assets/images/extincteur-co2.jpg"]
+  }
+  ,
+  {
+    "id": 7,
+    "title": "zeko",
+    "price": 89.99,
+    "brand": "AFRI-SECURITE",
+    "description": "Extincteur à CO2 pour feux électriques.",
+    "sku": "EXT-CO2-006",
+    "tags": ["Extincteur", "CO2", "Électrique"],
+    "availability": "Disponible",
+    "images": ["assets/images/extincteur-co2.jpg"]
+  }
+]

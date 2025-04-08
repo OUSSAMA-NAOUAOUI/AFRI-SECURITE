@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Sécurité Incendie</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog Sécurité Incendie</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <?php include 'components/head.php'; ?>
+        
     <style>
         :root {
             --primary-color: #b22222;
@@ -166,124 +168,123 @@
 </head>
 <body>
 
-    <?php include 'components/head.php'; ?>
     <?php include 'components/header.php'; ?>
     <!-- progressbar -->
     <div class="progressbar"></div>
-    <main>
-        <h1 class="page-title">Catégorie : Sécurité Incendie</h1>
+<main>
+    <h1 class="page-title">Catégorie : Sécurité Incendie</h1>
+    
+    <div class="blog-container">
+        <!-- Article 1 -->
+        <article class="blog-card">
+            <div class="card-image">
+                <img src="assets/images/catalogues/cat3.png" alt="Prévention des Incendies">
+            </div>
+            <div class="blog-content">
+                <h3>Prévention des incendies : les meilleures pratiques</h3>
+                <div class="meta">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>24 mars 2025</span>
+                </div>
+                <p class="excerpt">Découvrez les mesures essentielles pour prévenir les risques d'incendie dans votre entreprise ou domicile.</p>
+                <a href="/securite-incendie/prevention-meilleures-pratiques" class="read-more">Lire l'article <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
         
-        <div class="blog-container">
-            <article class="blog-card">
-                <div class="card-image">
-                    <img src="assets/images/catalogues/cat3.png" alt="Prévention des Incendies">
+        <!-- Article 2 -->
+        <article class="blog-card">
+            <div class="card-image">
+                <img src="assets/images/catalogues/cat4.png" alt="Extincteurs">
+            </div>
+            <div class="blog-content">
+                <h3>Guide complet pour choisir et utiliser un extincteur</h3>
+                <div class="meta">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>24 mars 2025</span>
                 </div>
-                <div class="blog-content">
-                    <h3>Prévention des incendies : les meilleures pratiques</h3>
-                    <div class="meta">
-                        <i class="far fa-calendar-alt"></i>
-                        <span>24 mars 2025</span>
-                        <!-- <i class="far fa-user"></i> -->
-                    </div>
-                    <p class="excerpt">Découvrez les mesures essentielles pour prévenir les risques d'incendie dans votre entreprise ou domicile.</p>
-                    <a href="#" class="read-more">Lire l'article <i class="fas fa-arrow-right"></i></a>
+                <p class="excerpt">Tout ce que vous devez savoir sur les différents types d'extincteurs et leur utilisation en situation d'urgence.</p>
+                <a href="/guides/choisir-utiliser-extincteur" class="read-more">Lire l'article <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+        
+        <!-- Article 3 -->
+        <article class="blog-card">
+            <div class="card-image">
+                <img src="assets/images/catalogues/cat6.png" alt="Évacuation">
+            </div>
+            <div class="blog-content">
+                <h3>Plan d'évacuation : ce que vous devez savoir</h3>
+                <div class="meta">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>24 mars 2025</span>
                 </div>
-            </article>
-            
-            <article class="blog-card">
-                <div class="card-image">
-                    <img src="assets/images/catalogues/cat4.png" alt="Extincteurs">
+                <p class="excerpt">Comment créer et mettre en œuvre un plan d'évacuation efficace pour votre bâtiment.</p>
+                <a href="/securite/plan-evacuation-guide" class="read-more">Lire l'article <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+        
+        <!-- Article 4 -->
+        <article class="blog-card">
+            <div class="card-image">
+                <img src="assets/images/catalogues/cat7.png" alt="Détecteurs de fumée">
+            </div>
+            <div class="blog-content">
+                <h3>Les détecteurs de fumée : installation et entretien</h3>
+                <div class="meta">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>24 mars 2025</span>
                 </div>
-                <div class="blog-content">
-                    <h3>Guide complet pour choisir et utiliser un extincteur</h3>
-                    <div class="meta">
-                        <i class="far fa-calendar-alt"></i>
-                        <span>24 mars 2025</span>
-                        <!-- <i class="far fa-user"></i> -->
-                    </div>
-                    <p class="excerpt">Tout ce que vous devez savoir sur les différents types d'extincteurs et leur utilisation en situation d'urgence.</p>
-                    <a href="#" class="read-more">Lire l'article <i class="fas fa-arrow-right"></i></a>
+                <p class="excerpt">Guide pratique pour choisir, installer et entretenir vos détecteurs de fumée pour une sécurité optimale.</p>
+                <a href="/guides/detecteurs-fumee-installation" class="read-more">Lire l'article <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+        
+        <!-- Article 5 -->
+        <article class="blog-card">
+            <div class="card-image">
+                <img src="assets/images/catalogues/cat11.png" alt="Exercices incendie">
+            </div>
+            <div class="blog-content">
+                <h3>L'importance des exercices incendie réguliers</h3>
+                <div class="meta">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>24 mars 2025</span>
                 </div>
-            </article>
-            
-            <article class="blog-card">
-                <div class="card-image">
-                    <img src="assets/images/catalogues/cat6.png" alt="Évacuation">
+                <p class="excerpt">Pourquoi et comment organiser des exercices incendie efficaces dans votre entreprise.</p>
+                <a href="/securite/exercices-incendie-entreprises" class="read-more">Lire l'article <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+        
+        <!-- Article 6 -->
+        <article class="blog-card">
+            <div class="card-image">
+                <img src="assets/images/catalogues/cat14.png" alt="Risques chimiques">
+            </div>
+            <div class="blog-content">
+                <h3>Gestion des risques d'incendie chimique</h3>
+                <div class="meta">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>24 mars 2025</span>
                 </div>
-                <div class="blog-content">
-                    <h3>Plan d'évacuation : ce que vous devez savoir</h3>
-                    <div class="meta">
-                        <i class="far fa-calendar-alt"></i>
-                        <span>24 mars 2025</span>
-                        <!-- <i class="far fa-user"></i> -->
-                    </div>
-                    <p class="excerpt">Comment créer et mettre en œuvre un plan d'évacuation efficace pour votre bâtiment.</p>
-                    <a href="#" class="read-more">Lire l'article <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </article>
-            
-            <article class="blog-card">
-                <div class="card-image">
-                    <img src="assets/images/catalogues/cat7.png" alt="Détecteurs de fumée">
-                </div>
-                <div class="blog-content">
-                    <h3>Les détecteurs de fumée : installation et entretien</h3>
-                    <div class="meta">
-                        <i class="far fa-calendar-alt"></i>
-                        <span>24 mars 2025</span>
-                        <!-- <i class="far fa-user"></i> -->
-                    </div>
-                    <p class="excerpt">Guide pratique pour choisir, installer et entretenir vos détecteurs de fumée pour une sécurité optimale.</p>
-                    <a href="#" class="read-more">Lire l'article <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </article>
-            
-            <article class="blog-card">
-                <div class="card-image">
-                    <img src="assets/images/catalogues/cat11.png" alt="Exercices incendie">
-                </div>
-                <div class="blog-content">
-                    <h3>L'importance des exercices incendie réguliers</h3>
-                    <div class="meta">
-                        <i class="far fa-calendar-alt"></i>
-                        <span>24 mars 2025</span>
-                        <!-- <i class="far fa-user"></i> -->
-                    </div>
-                    <p class="excerpt">Pourquoi et comment organiser des exercices incendie efficaces dans votre entreprise.</p>
-                    <a href="#" class="read-more">Lire l'article <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </article>
-            
-            <article class="blog-card">
-                <div class="card-image">
-                    <img src="assets/images/catalogues/cat14.png" alt="Risques chimiques">
-                </div>
-                <div class="blog-content">
-                    <h3>Gestion des risques d'incendie chimique</h3>
-                    <div class="meta">
-                        <i class="far fa-calendar-alt"></i>
-                        <span>24 mars 2025</span>
-                        <!-- <i class="far fa-user"></i> -->
-                    </div>
-                    <p class="excerpt">Protocoles spécifiques pour prévenir et combattre les incendies impliquant des produits chimiques.</p>
-                    <a href="#" class="read-more">Lire l'article <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </article>
-        </div>
-        <ul class="pagination">
-              <li><a href="#" class="pagination__link active">01</a></li>
-              <li><a href="#" class="pagination__link">02</a></li>
-              <li><a href="#" class="pagination__link">03</a></li>
-              <li><a href="#" class="pagination__link">...</a></li>
-              <li><a href="#" class="pagination__link">16</a></li>
-              <li>
-                <a href="#" class="pagination__link icon">
-                  <i class="fi-rs-angle-double-small-right"></i>
-                </a>
-              </li>
-            </ul>
-    </main>
-
+                <p class="excerpt">Protocoles spécifiques pour prévenir et combattre les incendies impliquant des produits chimiques.</p>
+                <a href="/securite/risques-incendie-chimique" class="read-more">Lire l'article <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </div>
+    
+    <ul class="pagination">
+        <li><a href="#" class="pagination__link active">01</a></li>
+        <li><a href="#" class="pagination__link">02</a></li>
+        <li><a href="#" class="pagination__link">03</a></li>
+        <li><a href="#" class="pagination__link">...</a></li>
+        <li><a href="#" class="pagination__link">16</a></li>
+        <li>
+            <a href="/securite-incendie?page=2" class="pagination__link icon">
+                <i class="fi-rs-angle-double-small-right"></i>
+            </a>
+        </li>
+    </ul>
+</main>
      <!--=============== NEWSLETTER ===============-->
      <?php include 'components/newsletter2.php'; ?>
     </main>

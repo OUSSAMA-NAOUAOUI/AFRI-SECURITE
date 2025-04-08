@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formation Professionnelle en Sécurité Incendie | Expert Certifié</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         :root {
             --primary: #E30613;
@@ -12,80 +14,110 @@
             --light: #F8F9FA;
             --dark: #212529;
             --gray: #6C757D;
+            --white: #FFFFFF;
         }
         
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
         
         body {
             background-color: var(--light);
             color: var(--dark);
             line-height: 1.6;
+            overflow-x: hidden;
         }
         
-        /* Hero Slider */
-        .hero-slider {
-            width: 100%;
-            /* height: 90vh; */
-            min-height: 600px;
-            background:
-                linear-gradient(rgba(33, 37, 41, 0.85), rgba(33, 37, 41, 0.8)),
-                url('https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
-            animation: changeBackground 32s infinite;
+        /* Hero Section */
+        /* Hero Section - Matching Historique Page */
+        .page-hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assets/images/slider-main/image3.jpg') center/cover no-repeat;
+            height: 400px;
             display: flex;
             align-items: center;
-            justify-content: center;
             text-align: center;
             color: white;
-            position: relative;
-            overflow: hidden;
+            /* margin-top: 80px; */  /* Space for fixed header */
         }
+
+        .page-hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color:white;
+        }
+
+        .breadcrumb {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            background: none;
+        }
+
+        .breadcrumb li {
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .breadcrumb li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .breadcrumb li:not(:last-child):after {
+            content: '/';
+            margin-left: 10px;
+            color: white;
+        }
+
+        /* Section Styling - Matching Timeline Style */
+        .section {
+            /* padding: 80px 0; */
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
         
         @keyframes changeBackground {
             0%, 16% {
                 background:
-                    linear-gradient(rgba(33, 37, 41, 0.85), rgba(33, 37, 41, 0.8)),
+                    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
                     url('https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
             }
             20%, 36% {
                 background:
-                    linear-gradient(rgba(33, 37, 41, 0.85), rgba(33, 37, 41, 0.8)),
+                    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
                     url('https://images.unsplash.com/photo-1581093196276-3d6b9f0b6e9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
             }
             40%, 56% {
                 background:
-                    linear-gradient(rgba(33, 37, 41, 0.85), rgba(33, 37, 41, 0.8)),
+                    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
                     url('https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
             }
             60%, 76% {
                 background:
-                    linear-gradient(rgba(33, 37, 41, 0.85), rgba(33, 37, 41, 0.8)),
+                    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
                     url('https://images.unsplash.com/photo-1581093057305-5e0a6d4e5b8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
-            }
-            80%, 96% {
-                background:
-                    linear-gradient(rgba(33, 37, 41, 0.85), rgba(33, 37, 41, 0.8)),
-                    url('https://images.unsplash.com/photo-1581093196276-3d6b9f0b6e9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
-            }
-            100% {
-                background:
-                    linear-gradient(rgba(33, 37, 41, 0.85), rgba(33, 37, 41, 0.8)),
-                    url('https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
             }
         }
         
         .hero-content {
             max-width: 800px;
+            margin: 0 auto;
             padding: 0 2rem;
             z-index: 2;
         }
         
         .hero-content h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
             margin-bottom: 1.5rem;
             font-weight: 700;
             line-height: 1.2;
@@ -99,21 +131,7 @@
             text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
         
-        .cta-button {
-            background-color: var(--primary);
-            color: white;
-            padding: 1rem 2.5rem;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            letter-spacing: 0.5px;
-            box-shadow: 0 4px 15px rgba(227, 6, 19, 0.4);
-        }
+        
         
         .cta-button:hover {
             background-color: #c10510;
@@ -133,24 +151,37 @@
             scroll-margin-top: 2rem;
         }
         
-        h2 {
-            color: var(--secondary);
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            position: relative;
-            padding-bottom: 1rem;
-            font-weight: 700;
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
         }
         
-        h2::after {
+        .section-title h2 {
+            color: var(--secondary);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 1rem;
+        }
+        
+        .section-title h2::after {
             content: '';
             position: absolute;
             bottom: 0;
-            left: 0;
+            left: 50%;
+            transform: translateX(-50%);
             width: 80px;
-            height: 5px;
+            height: 4px;
             background-color: var(--primary);
             border-radius: 3px;
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
         }
         
         h3 {
@@ -271,7 +302,7 @@
             margin: 6rem 0;
             background-image: 
                 linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
-                url('https://images.unsplash.com/photo-1517971053567-8bde93bc6a58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+                url();
             background-size: cover;
             background-position: center;
         }
@@ -358,8 +389,60 @@
             margin: 0;
         }
         
+        /* Newsletter */
+        .newsletter {
+            background-color: var(--primary-light);
+            padding: 4rem 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin: 4rem 0;
+        }
+        
+        .newsletter h3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .newsletter-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .newsletter-input {
+            flex: 1;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 50px;
+            font-size: 1rem;
+        }
+        
+        .newsletter-btn {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .newsletter-btn:hover {
+            background-color: #c10510;
+        }
+        
         /* Responsive Adjustments */
         @media (max-width: 768px) {
+            .training-hero {
+                height: 400px;
+            }
+            
             .hero-content h1 {
                 font-size: 2.5rem;
             }
@@ -376,31 +459,42 @@
                 margin-bottom: 4rem;
             }
             
-            h2 {
+            .section-title h2 {
                 font-size: 2rem;
             }
             
             .features {
                 padding: 2rem;
             }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+            
+            .newsletter-btn {
+                width: 100%;
+            }
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="hero-slider">
-        <div class="hero-content">
-            <h1>Formation Professionnelle en Sécurité Incendie</h1>
-            <!-- <p>Des solutions sur mesure certifiées par des experts du secteur avec plus de 15 ans d'expérience sur le terrain</p> -->
-            <a href="#programmes" class="cta-button">Découvrir nos formations</a>
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container page-hero-content">
+            <h1>AFRI-SECURITE</h1>
+            <ul class="breadcrumb">
+                <li><a href="../index.php">Accueil</a></li>
+                <li>Les Formation</li>
+            </ul>
         </div>
-    </div>
+    </section>
 
     <div class="container">
         <section id="about">
-            <h2>Expertise en Prévention Incendie</h2>
-            <p>Notre centre de formation agréé propose des programmes complets adaptés aux exigences légales et spécifiques à chaque secteur d'activité. Nous combinons théorie et pratique pour une maîtrise optimale des procédures de sécurité.</p>
+            <div class="section-title">
+                <h2>Expertise en Prévention Incendie</h2>
+                <p>Notre centre de formation agréé propose des programmes complets adaptés aux exigences légales et spécifiques à chaque secteur d'activité.</p>
+            </div>
             
             <div class="features">
                 <h3>Pourquoi choisir notre expertise ?</h3>
@@ -439,8 +533,10 @@
         </section>
 
         <section id="programmes">
-            <h2>Nos Programmes de Formation</h2>
-            <p>Des cursus modulables selon vos besoins spécifiques et le niveau de risque de votre établissement.</p>
+            <div class="section-title">
+                <h2>Nos Programmes de Formation</h2>
+                <p>Des cursus modulables selon vos besoins spécifiques et le niveau de risque de votre établissement.</p>
+            </div>
             
             <div class="formation-cards">
                 <div class="card">
@@ -488,7 +584,10 @@
         </section>
 
         <div class="stats">
-            <h2 style="color: white; margin-bottom: 3rem;">Notre Impact en Chiffres</h2>
+            <div class="section-title" style="color: white;">
+                <h2>Notre Impact en Chiffres</h2>
+                <p>Des résultats concrets qui témoignent de notre expertise</p>
+            </div>
             <div class="stats-grid">
                 <div class="stat-item">
                     <h3>250+</h3>
@@ -510,8 +609,10 @@
         </div>
 
         <section id="methodologie">
-            <h2>Notre Méthodologie Unique</h2>
-            <p>Une approche pédagogique éprouvée combinant savoir-faire technique et mises en situation réalistes.</p>
+            <div class="section-title">
+                <h2>Notre Méthodologie Unique</h2>
+                <p>Une approche pédagogique éprouvée combinant savoir-faire technique et mises en situation réalistes.</p>
+            </div>
             
             <div class="features-grid" style="margin-top: 3rem;">
                 <div class="feature-item">
@@ -547,8 +648,10 @@
         </section>
 
         <section class="testimonials">
-            <h2>Témoignages</h2>
-            <p>Ce que disent les professionnels de notre formation.</p>
+            <div class="section-title">
+                <h2>Témoignages</h2>
+                <p>Ce que disent les professionnels de notre formation.</p>
+            </div>
             
             <div class="testimonial-cards">
                 <div class="testimonial">
@@ -590,6 +693,15 @@
                     </div>
                 </div>
             </div>
+        </section>
+        
+        <section class="newsletter">
+            <h3><i class="fas fa-envelope"></i> Restez informé</h3>
+            <p>Abonnez-vous à notre newsletter pour recevoir nos dernières actualités et offres de formation.</p>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Votre adresse email">
+                <button type="submit" class="newsletter-btn">S'abonner</button>
+            </form>
         </section>
     </div>
 </body>

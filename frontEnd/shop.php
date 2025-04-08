@@ -1,3 +1,20 @@
+<?php
+// Vérifier si le fichier JSON existe
+$json_file = 'data/products.json';
+if (!file_exists($json_file)) {
+    die("Le fichier products.json n'existe pas dans le dossier data");
+}
+
+// Lire le fichier JSON
+$json_data = file_get_contents($json_file);
+$products = json_decode($json_data, true);
+
+// Vérifier si le décodage a réussi
+if (json_last_error() !== JSON_ERROR_NONE) {
+    die("Erreur dans le format du fichier JSON: " . json_last_error_msg());
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,16 +40,17 @@
 
       <!--=============== PRODUCTS ===============-->
       <section class="products section--lg container">
-        <p class="total__products">We found <span>999</span> items for you!</p>
+        <p class="total__products">We found <span><?php echo count($products); ?></span> items for you!</p>
 
         <div class="products__container grid">
+          <?php foreach ($products as $product): ?>
           <div class="product__item">
             <div class="product__banner">
-              <a href="details.php" class="product__images">
-                <img src="assets/images/h-380.jpg" alt="" 
+              <a href="details.php?id=<?php echo $product['id']; ?>" class="product__images">
+                <img src="<?php echo $product['images'][0]; ?>" alt="" 
                 class="product__img default">
 
-                <img src="assets/images/h-380.jpg" alt="" 
+                <img src="<?php echo $product['images'][0]; ?>" alt="" 
                 class="product__img hover">
               </a>
 
@@ -41,9 +59,9 @@
             </div>
 
             <div class="product__content">
-              <span class="product__category">sécurité incendie</span>
-              <a href="details.php">
-                <h3 class="product__title">Véhicule Incendie Mousse</h3>
+              <span class="product__category"><?php echo $product['brand']; ?></span>
+              <a href="details.php?id=<?php echo $product['id']; ?>">
+                <h3 class="product__title"><?php echo $product['title']; ?></h3>
               </a>
               <div class="product__rating">
                 <i class="fi fi-rs-star"></i>
@@ -53,8 +71,7 @@
                 <i class="fi fi-rs-star"></i>
               </div>
               <div class="product__price flex">
-                <span class="new__price">$238.85</span>
-                <span class="old__price">$245.8</span>
+                <span class="new__price">$<?php echo $product['price']; ?></span>
               </div>
 
               <a href="#" 
@@ -65,468 +82,7 @@
               </a>
             </div>
           </div>
-
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.php" class="product__images">
-                <img src="assets/images/service/acs.jpg"
-                 alt="" 
-                class="product__img default">
-
-                <img src="assets/images/service/acs.jpg"
-                 alt="" 
-                class="product__img hover">
-              </a>
-
-             
-              
-            </div>
-
-            <div class="product__content">
-              <span class="product__category">sécurité incendie</span>
-              <a href="details.php">
-                <h3 class="product__title">Véhicule Incendie Mousse</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">$238.85</span>
-                <span class="old__price">$245.8</span>
-              </div>
-
-              <a href="#" 
-              class="action__btn cart__btn" 
-              aria-label="Add To Cart"
-              >
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.php" class="product__images">
-                <img src="assets/images/service/agre-deux-robinet.jpg"
-                 alt="" 
-                class="product__img default">
-
-                <img src="assets/images/service/agre-deux-robinet.jpg"
-                alt="" 
-                class="product__img hover">
-              </a>
-
-             
-              
-            </div>
-
-            <div class="product__content">
-              <span class="product__category">sécurité incendie</span>
-              <a href="details.php">
-                <h3 class="product__title">Véhicule Incendie Mousse</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">$238.85</span>
-                <span class="old__price">$245.8</span>
-              </div>
-
-              <a href="#" 
-              class="action__btn cart__btn" 
-              aria-label="Add To Cart"
-              >
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.php" class="product__images">
-                <img src="assets/images/service/altair-5x.jpg"
-                 alt="" 
-                class="product__img default">
-
-                <img src="assets/images/service/altair-5x.jpg"
-                 alt="" 
-                class="product__img hover">
-              </a>
-
-             
-              
-            </div>
-
-            <div class="product__content">
-              <span class="product__category">sécurité incendie</span>
-              <a href="details.php">
-                <h3 class="product__title">Véhicule Incendie Mousse</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">$238.85</span>
-                <span class="old__price">$245.8</span>
-              </div>
-
-              <a href="#" 
-              class="action__btn cart__btn" 
-              aria-label="Add To Cart"
-              >
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.php" class="product__images">
-                <img src="assets/images/service/altair-2x.jpg"
-                 alt="" 
-                class="product__img default">
-
-                <img src="assets/images/service/altair-2x.jpg"
-                 alt="" 
-                class="product__img hover">
-              </a>
-
-             
-              
-            </div>
-
-            <div class="product__content">
-              <span class="product__category">sécurité incendie</span>
-              <a href="details.php">
-                <h3 class="product__title">Véhicule Incendie Mousse</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">$238.85</span>
-                <span class="old__price">$245.8</span>
-              </div>
-
-              <a href="#" 
-              class="action__btn cart__btn" 
-              aria-label="Add To Cart"
-              >
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.php" class="product__images">
-                <img src="assets/images/service/anti.jpg"
-                 alt="" 
-                class="product__img default">
-
-                <img src="assets/images/service/anti.jpg"
-                alt="" 
-                class="product__img hover">
-              </a>
-
-             
-              
-            </div>
-
-            <div class="product__content">
-              <span class="product__category">sécurité incendie</span>
-              <a href="details.php">
-                <h3 class="product__title">Véhicule Incendie Mousse</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">$238.85</span>
-                <span class="old__price">$245.8</span>
-              </div>
-
-              <a href="#" 
-              class="action__btn cart__btn" 
-              aria-label="Add To Cart"
-              >
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.php" class="product__images">
-                <img src="assets/images/service/canons.jpg"
-                 alt="" 
-                class="product__img default">
-
-                <img src="assets/images/service/canons.jpg"
-                 alt="" 
-                class="product__img hover">
-              </a>
-
-             
-              
-            </div>
-
-            <div class="product__content">
-              <span class="product__category">sécurité incendie</span>
-              <a href="details.php">
-                <h3 class="product__title">Véhicule Incendie Mousse</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">$238.85</span>
-                <span class="old__price">$245.8</span>
-              </div>
-
-              <a href="#" 
-              class="action__btn cart__btn" 
-              aria-label="Add To Cart"
-              >
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.php" class="product__images">
-                <img src="assets/img/xf2.jpg"
-                 alt="" 
-                class="product__img default">
-
-                <img src="assets/img/product-8-2.jpg"
-                 alt="" 
-                class="product__img hover">
-              </a>
-
-             
-              
-            </div>
-
-            <div class="product__content">
-              <span class="product__category">sécurité incendie</span>
-              <a href="details.php">
-                <h3 class="product__title">Véhicule Incendie Mousse</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">$238.85</span>
-                <span class="old__price">$245.8</span>
-              </div>
-
-              <a href="#" 
-              class="action__btn cart__btn" 
-              aria-label="Add To Cart"
-              >
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.php" class="product__images">
-                <img src="assets/images/service/cas.jpg"
-                 alt="" 
-                class="product__img default">
-
-                <img src="assets/images/service/cas.jpg"
-                 alt="" 
-                class="product__img hover">
-              </a>
-
-             
-              
-            </div>
-
-            <div class="product__content">
-              <span class="product__category">sécurité incendie</span>
-              <a href="details.php">
-                <h3 class="product__title">Véhicule Incendie Mousse</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">$238.85</span>
-                <span class="old__price">$245.8</span>
-              </div>
-
-              <a href="#" 
-              class="action__btn cart__btn" 
-              aria-label="Add To Cart"
-              >
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.php" class="product__images">
-                <img src="assets/images/service/detecteur.jpg"
-                 alt="" 
-                class="product__img default">
-
-                <img src="assets/images/service/detecteur.jpg"
-                 alt="" 
-                class="product__img hover">
-              </a>
-
-             
-              
-            </div>
-
-            <div class="product__content">
-              <span class="product__category">sécurité incendie</span>
-              <a href="details.php">
-                <h3 class="product__title">Véhicule Incendie Mousse</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">$238.85</span>
-                <span class="old__price">$245.8</span>
-              </div>
-
-              <a href="#" 
-              class="action__btn cart__btn" 
-              aria-label="Add To Cart"
-              >
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.php" class="product__images">
-                <img src="assets/images/service/kit-reccordement-chariot-air.jpg"
-                 alt="" 
-                class="product__img default">
-
-                <img src="assets/images/service/kit-reccordement-chariot-air.jpg"
-                 alt="" 
-                class="product__img hover">
-              </a>
-
-             
-              
-            </div>
-
-            <div class="product__content">
-              <span class="product__category">sécurité incendie</span>
-              <a href="details.php">
-                <h3 class="product__title">kit-reccordement-chariot-air</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">$238.85</span>
-                <span class="old__price">$245.8</span>
-              </div>
-
-              <a href="#" 
-              class="action__btn cart__btn" 
-              aria-label="Add To Cart"
-              >
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="product__item">
-            <div class="product__banner">
-              <a href="details.php" class="product__images">
-                <img src="assets/images/service/lanc.jpg"
-                 alt="" 
-                class="product__img default">
-
-                <img src="assets/images/service/lanc.jpg"
-                 alt="" 
-                class="product__img hover">
-              </a>
-
-             
-              
-            </div>
-
-            <div class="product__content">
-              <span class="product__category">sécurité incendie</span>
-              <a href="details.php">
-                <h3 class="product__title">Véhicule Incendie Mousse</h3>
-              </a>
-              <div class="product__rating">
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-                <i class="fi fi-rs-star"></i>
-              </div>
-              <div class="product__price flex">
-                <span class="new__price">$238.85</span>
-                <span class="old__price">$245.8</span>
-              </div>
-
-              <a href="#" 
-              class="action__btn cart__btn" 
-              aria-label="Add To Cart"
-              >
-                <i class="fi fi-rs-shopping-bag-add"></i>
-              </a>
-            </div>
-          </div>
+          <?php endforeach; ?>
         </div>
 
         <ul class="pagination">
