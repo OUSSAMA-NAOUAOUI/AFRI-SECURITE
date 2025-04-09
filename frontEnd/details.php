@@ -1,29 +1,29 @@
 <?php
-// Lire le fichier JSON
-$json_data = file_get_contents('data/products.json');
-$data = json_decode($json_data, true);
-$products = $data['products'];
+    // Lire le fichier JSON
+    $json_data = file_get_contents('data/products.json');
+    $data = json_decode($json_data, true);
+    $products = $data['products'];
 
-if (isset($_GET['id'])) {
-    $product_id = $_GET['id'];
-    $product = null;
-    
-    // Trouver le produit par ID
-    foreach ($products as $p) {
-        if ($p['id'] == $product_id) {
-            $product = $p;
-            break;
+    if (isset($_GET['id'])) {
+        $product_id = $_GET['id'];
+        $product = null;
+        
+        // Trouver le produit par ID
+        foreach ($products as $p) {
+            if ($p['id'] == $product_id) {
+                $product = $p;
+                break;
+            }
         }
-    }
-    
-    if (!$product) {
+        
+        if (!$product) {
+            header("Location: shop.php");
+            exit();
+        }
+    } else {
         header("Location: shop.php");
         exit();
     }
-} else {
-    header("Location: shop.php");
-    exit();
-}
 ?>
 
 <!DOCTYPE html>

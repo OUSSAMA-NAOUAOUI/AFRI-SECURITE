@@ -12,9 +12,9 @@
           BUSINESS CENTER Central Park Immeuble A 5ème Etage <br>
           Bureau N°37 BD Abdelmoumen MOHAMMEDIA 20650
         </p>
-        <a href="login-register.php" class="header__top-action">
+        <!-- <a href="login-register.php" class="header__top-action">
           Log In / Sign Up
-        </a>
+        </a> -->
 
       </div>
     </div>
@@ -52,21 +52,21 @@
             </ul>
           </li>
 
-          <li class="nav__item dropdown">
+            <li class="nav__item dropdown">
             <a href="shop.php" class="nav__link">Produits</a>
             <button class="arrow-nav">
             <img src="assets/img/down-arrow.png" alt="">
            </button>
           <ul class="dropdown-menu">
-              <li><a href="#">Catégorie Téte</a></li>
-              <li><a href="#">Catégorie Mains</a></li>
-              <li><a href="#">Catégorie corps</a></li>
-              <li><a href="#">Catégorie pieds</a></li>
-              <li><a href="#">Catégorie d'intervention</a></li>
-              <li><a href="#">Catégorie l'incendie</a></li>
-              <li><a href="#">Catégorie Sapeurs-Pompiers</a></li>
+              <li><a href="categories/categories.php?cat=Casque">Catégorie Casque</a></li>
+              <li><a href="categories/categories.php?cat=Gants">Catégorie Gants</a></li>
+              <li><a href="categories/categories.php?cat=corps">Catégorie corps</a></li>
+              <li><a href="categories/categories.php?cat=pieds">Catégorie pieds</a></li>
+              <li><a href="categories/categories.php?cat=intervention">Catégorie d'intervention</a></li>
+              <li><a href="categories/categories.php?cat=incendie">Catégorie l'incendie</a></li>
+              <li><a href="categories/categories.php?cat=Sapeurs-Pompiers">Catégorie Sapeurs-Pompiers</a></li>
             </ul>
-          </li>
+            </li>
 
           <li class="nav__item dropdown">
             <a href="#" class="nav__link">Services</a>

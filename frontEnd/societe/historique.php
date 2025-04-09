@@ -16,7 +16,7 @@
     <link rel="website icon" type="png" href="../assets/images/favicon/favicon.ico">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     
-    <style>
+<style>
         :root {
             --primary: #E30613;
             --secondary: #333;

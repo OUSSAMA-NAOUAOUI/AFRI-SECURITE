@@ -1,80 +1,120 @@
-[
-  {
-    "id": 1,
-    "title": "Véhicule Incendie Mousse",
-    "price": 116,
-    "brand": "AFRI-SECURITE",
-    "description": "Fire Monitor – La solution idéale pour une protection incendie efficace !",
-    "sku": "FIRE-MONITOR-001",
-    "tags": ["Fire Safety", "Water Cannon", "Firefighting"],
-    "availability": "Disponible",
-    "images": ["assets/images/h-380.jpg", "assets/images/fire-monitor.png", "assets/images/rosenbauer_monitor_RB6-.jpg"]
-  },
-  {
-    "id": 2,
-    "title": "Extincteur à Poudre",
-    "price": 59.99,
-    "brand": "AFRI-SECURITE",
-    "description": "Extincteur idéal pour bureaux et maisons.",
-    "sku": "EXT-POW-002",
-    "tags": ["Sécurité", "Extincteur"],
-    "availability": "Disponible",
-    "images": ["assets/images/h-380.jpg", "assets/images/extincteur2.jpg"]
-  },
-  {
-    "id": 3,
-    "title": "Détecteur de Fumée",
-    "price": 29.99,
-    "brand": "AFRI-SECURITE",
-    "description": "Détecteur de fumée intelligent avec alarme sonore.",
-    "sku": "DET-FUM-003",
-    "tags": ["Détection", "Sécurité"],
-    "availability": "Disponible",
-    "images": ["assets/images/h-380.jpg"]
-  },
-  {
-    "id": 4,
-    "title": "RIA (Robinet Incendie Armé)",
-    "price": 199.99,
-    "brand": "AFRI-SECURITE",
-    "description": "Robinet d'incendie armé pour protection des bâtiments.",
-    "sku": "RIA-004",
-    "tags": ["Incendie", "Protection"],
-    "availability": "Disponible",
-    "images": ["assets/images/ria.jpg"]
-  },
-  {
-    "id": 5,
-    "title": "Système d'Alarme Incendie",
-    "price": 499.99,
-    "brand": "AFRI-SECURITE",
-    "description": "Système complet de détection et d'alarme incendie.",
-    "sku": "SAI-005",
-    "tags": ["Système", "Alarme", "Incendie"],
-    "availability": "Disponible",
-    "images": ["assets/images/systeme-alarme.jpg"]
-  },
-  {
-    "id": 6,
-    "title": "Extincteur CO2",
-    "price": 89.99,
-    "brand": "AFRI-SECURITE",
-    "description": "Extincteur à CO2 pour feux électriques.",
-    "sku": "EXT-CO2-006",
-    "tags": ["Extincteur", "CO2", "Électrique"],
-    "availability": "Disponible",
-    "images": ["assets/images/extincteur-co2.jpg"]
+{
+  "categories": {
+    "categorieCasques": [
+      {
+        "id": 1,
+        "title": "Casque de Sécurité F1 Anti-Feu",
+        "price": 116,
+        "brand": "AFRI-SECURITE",
+        "description": "Casque de protection incendie haute performance avec visière thermorésistante, conforme aux normes de sécurité. Idéal pour les pompiers et professionnels du feu.",
+        "sku": "HELMET-F1-001",
+        "tags": ["Incendie", "Protection", "Casque Pro"],
+        "availability": "Disponible",
+        "images": ["../assets/images/h-380.jpg", "assets/images/ALTAIR4xr.jpg"],
+        "Currency": "DH"
+      },
+      {
+        "id": 2,
+        "title": "Casque de Chantier Sécurité",
+        "price": 89.99,
+        "brand": "AFRI-SECURITE",
+        "description": "Casque de protection pour chantier avec suspension réglable et coque en polyéthylène résistant aux chocs. Conforme aux normes EN 397.",
+        "sku": "HELMET-CONST-002",
+        "tags": ["BTP", "Chantier", "Sécurité"],
+        "availability": "Disponible",
+        "images": ["../assets/images/casque-chantier1.jpg"],
+        "Currency": "DH"
+      }
+      ,
+      {
+        "id": 3,
+        "title": "Casque Forestier Anti-Coupure",
+        "price": 129.99,
+        "brand": "AFRI-SECURITE",
+        "description": "Casque de protection pour bûcheron avec protection auditive et visière anti-coupure intégrée. Parfait pour les travaux forestiers.",
+        "sku": "HELMET-FOREST-003",
+        "tags": ["Forestier", "Anti-Coupure", "Protection"],
+        "availability": "Disponible",
+        "images": ["../assets/img/xf2.jpg"],
+        "Currency": "DH"
+      }
+      ,
+      {
+        "id": 4,
+        "title": "zaaaa",
+        "price": 129.99,
+        "brand": "AFRI-SECURITE",
+        "description": "Casque de protection pour bûcheron avec protection auditive et visière anti-coupure intégrée. Parfait pour les travaux forestiers.",
+        "sku": "HELMET-FOREST-003",
+        "tags": ["Forestier", "Anti-Coupure", "Protection"],
+        "availability": "Disponible",
+        "images": ["../assets/img/xf2.jpg"],
+        "Currency": "DH"
+      }
+      ,
+      {
+        "id": 5,
+        "title": "osama",
+        "price": 129.99,
+        "brand": "AFRI-SECURITE",
+        "description": "Casque de protection pour bûcheron avec protection auditive et visière anti-coupure intégrée. Parfait pour les travaux forestiers.",
+        "sku": "HELMET-FOREST-003",
+        "tags": ["Forestier", "Anti-Coupure", "Protection"],
+        "availability": "Disponible",
+        "images": ["../assets/img/xf2.jpg"],
+        "Currency": "DH"
+      }
+    ],
+    
+    "categorieGants": [
+      {
+        "id": 1,
+        "title": "Gants Anti-Coupure Niveau 5",
+        "price": 45.99,
+        "brand": "AFRI-SECURITE",
+        "description": "Gants de protection haute performance avec fibres ultra-résistantes (norme EN 388). Protection maximale contre les coupures tout en conservant une excellente dextérité.",
+        "sku": "GLOVE-CUT5-001",
+        "tags": ["Anti-Coupure", "Protection", "Manutention"],
+        "availability": "Disponible",
+        "images": ["assets/images/gants-anti-coupure.jpg"],
+        "Currency": "DH"
+      },
+      {
+        "id": 2,
+        "title": "Gants Résistants à la Chaleur",
+        "price": 65.50,
+        "brand": "AFRI-SECURITE",
+        "description": "Gants de protection thermique résistant jusqu'à 500°C. Idéal pour les professionnels travaillant avec des matériaux chauds ou des flammes.",
+        "sku": "GLOVE-HEAT-002",
+        "tags": ["Thermique", "Chaleur", "Soudure"],
+        "availability": "Disponible",
+        "images": ["assets/images/gants-chaleur.jpg"],
+        "Currency": "DH"
+      },
+      {
+        "id": 3,
+        "title": "Gants de Travail en Cuir",
+        "price": 32.99,
+        "brand": "AFRI-SECURITE",
+        "description": "Gants robustes en cuir pleine fleur pour une protection optimale lors des travaux manuels. Renforts stratégiques pour une durabilité accrue.",
+        "sku": "GLOVE-LEATH-003",
+        "tags": ["Cuir", "Travail", "Manutention"],
+        "availability": "Disponible",
+        "images": ["assets/images/gants-cuir.jpg"],
+        "Currency": "DH"
+      },
+      {
+        "id": 4,
+        "title": "Gants Anti-Vibrations",
+        "price": 78.00,
+        "brand": "AFRI-SECURITE",
+        "description": "Gants spécialisés réduisant les vibrations jusqu'à 70%. Essentiels pour les opérateurs d'outils pneumatiques ou électroportatifs.",
+        "sku": "GLOVE-VIBR-004",
+        "tags": ["Vibrations", "Protection", "Outil"],
+        "availability": "Disponible",
+        "images": ["assets/images/gants-vibrations.jpg"],
+        "Currency": "DH"
+      }
+    ]
   }
-  ,
-  {
-    "id": 7,
-    "title": "zeko",
-    "price": 89.99,
-    "brand": "AFRI-SECURITE",
-    "description": "Extincteur à CO2 pour feux électriques.",
-    "sku": "EXT-CO2-006",
-    "tags": ["Extincteur", "CO2", "Électrique"],
-    "availability": "Disponible",
-    "images": ["assets/images/extincteur-co2.jpg"]
-  }
-]
+}

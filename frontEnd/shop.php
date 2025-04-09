@@ -1,18 +1,18 @@
 <?php
-// Vérifier si le fichier JSON existe
-$json_file = 'data/products.json';
-if (!file_exists($json_file)) {
-    die("Le fichier products.json n'existe pas dans le dossier data");
-}
+  // Vérifier si le fichier JSON existe
+    $json_file = 'data/products.json';
+    if (!file_exists($json_file)) {
+        die("Le fichier products.json n'existe pas dans le dossier data");
+    }
 
-// Lire le fichier JSON
-$json_data = file_get_contents($json_file);
-$products = json_decode($json_data, true);
+    // Lire le fichier JSON
+    $json_data = file_get_contents($json_file);
+    $products = json_decode($json_data, true);
 
-// Vérifier si le décodage a réussi
-if (json_last_error() !== JSON_ERROR_NONE) {
-    die("Erreur dans le format du fichier JSON: " . json_last_error_msg());
-}
+    // Vérifier si le décodage a réussi
+    if (json_last_error() !== JSON_ERROR_NONE) {
+        die("Erreur dans le format du fichier JSON: " . json_last_error_msg());
+    }
 ?>
 
 <!DOCTYPE html>
@@ -53,9 +53,7 @@ if (json_last_error() !== JSON_ERROR_NONE) {
                 <img src="<?php echo $product['images'][0]; ?>" alt="" 
                 class="product__img hover">
               </a>
-
-             
-              
+   
             </div>
 
             <div class="product__content">
@@ -71,7 +69,7 @@ if (json_last_error() !== JSON_ERROR_NONE) {
                 <i class="fi fi-rs-star"></i>
               </div>
               <div class="product__price flex">
-                <span class="new__price">$<?php echo $product['price']; ?></span>
+                <span class="new__price"><?php echo $product['price']; ?><?php echo $product['Currency']; ?></span>
               </div>
 
               <a href="#" 
@@ -97,6 +95,77 @@ if (json_last_error() !== JSON_ERROR_NONE) {
             </a>
           </li>
         </ul>
+      </section>
+      <!--=============== CATEGORIES ===============-->
+      <section class="categories container section ">
+        <h3 class="section__title"> <span>All</span> Categories</h3>
+
+        <div class="categories__container swiper">
+          <div class="swiper-wrapper">
+            <a href="shop.php" class="category__item swiper-slide">
+              <img src="assets/img/shos.png" alt="" 
+              class="category__img">
+
+            <h3 class="category__title">ince</h3>
+            </a>
+
+            <a href="shop.php" class="category__item swiper-slide">
+              <img src="assets/img/xf2.jpg" alt="" 
+              class="category__img">
+
+            <h3 class="category__title">Bags</h3>
+            </a>
+
+            <a href="shop.php" class="category__item swiper-slide">
+              <img src="assets/img/b.jpg" alt="" 
+              class="category__img">
+
+            <h3 class="category__title">Véhicule Incendie</h3>
+            </a>
+
+            <a href="shop.php" class="category__item swiper-slide">
+              <img src="assets/img/tete.jpg" alt="" 
+              class="category__img">
+
+            <h3 class="category__title">Scarf Cap</h3>
+            </a>
+
+            <a href="shop.php" class="category__item swiper-slide">
+              <img src="assets/img/b.jpg" alt="" 
+              class="category__img">
+
+            <h3 class="category__title">Shoes</h3>
+            </a>
+
+            <a href="shop.php" class="category__item swiper-slide">
+              <img src="assets/img/a.jpg" alt="" 
+              class="category__img">
+
+            <h3 class="category__title">Pillowcase</h3>
+            </a>
+
+            <a href="shop.php" class="category__item swiper-slide">
+              <img src="assets/img/a.jpg" alt="" 
+              class="category__img">
+
+            <h3 class="category__title">Jumpsuit</h3>
+            </a>
+
+            <a href="shop.php" class="category__item swiper-slide">
+              <img src="assets/img/a.jpg" alt="" 
+              class="category__img">
+
+            <h3 class="category__title">Hats</h3>
+            </a>
+          </div>
+
+          <div class="swiper-button-next">
+            <i class="fi fi-rs-angle-right"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fi fi-rs-angle-left"></i>
+          </div>
+        </div>
       </section>
 
       <!--=============== NEWSLETTER ===============-->
